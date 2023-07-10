@@ -1,15 +1,8 @@
 # Medieval Store API 🚀
 
-<details>
-  <summary><strong>👨‍💻 Challenge </strong></summary>
-
 Created a store of medieval items, such as those swords made to order for a specific person, in the format of an _API_, using _Typescript_ and _Sequelize_.
 
 Developed the application's _Service_ and _Controllers_ layers in its code, using _JWT_ to authenticate some routes, in addition to tests to ensure their correct operation. The application will have _endpoints_ that will support operations for creating, reading and updating information.
-
----
-
-</details>
 
 
 <details>
@@ -121,7 +114,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 }
 ```
 
-<details close>
+<details>
  <summary>Validations:</summary>
 
 > 👉  If the _login_ does not have the "username" field, the result returned should be an http_status_ `400`: 
@@ -154,7 +147,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
   {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJIYWdhciIsImlhdCI6MTY4Njc1NDc1Nn0.jqAuJkcLp0RuvrOd4xKxtj_lm3Z3-73gQQ9IVmwE5gA"
   }
-
+```
 
 </details>
 
