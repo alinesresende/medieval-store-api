@@ -42,11 +42,10 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 </details>
 
 
-## 1 - Crie um endpoint para o cadastro de produtos e testes que cubram as funcionalidades deste endpoint
+## 1 - Created an endpoint for the registration of products and tests that cover the functionalities of this endpoint
 
-- O endpoint deve ser acessível no caminho (`/products`);
-- Os produtos enviados devem ser salvos na tabela `products` do banco de dados;
-- O endpoint deve receber a seguinte estrutura:
+- The endpoint is accessible from the path (`/products`);
+- The result returned to successfully register the product should be as shown below, with a _status http_ `201`:
 
 ```json
 {
@@ -55,37 +54,6 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
   "orderId": 4
 }
 ```
-
-As ordens dos pedidos de id 1 a 3 já foram criados pelo seeders no banco de dados, sendo assim novos produtos devem passar um novo `orderId`, pois os produtos são exclusivos.
-
-- Os testes devem garantir no mínimo 30% de cobertura do código das camadas `Service` e `Controller`.
-
-> **De olho na dica 👀:**
->
-> - Para construir seus testes use o método [`.build()`](https://sequelize.org/docs/v6/core-concepts/model-instances/#creating-an-instance) quando for necessário;
->
-> - Lembre do _Type Assertion_ para testar tipos.
-
-<details close>
-  <summary>As seguintes verificações serão feitas:</summary>
-
-> 👉 Para caso os dados sejam enviados corretamente
-
-- **[Será validado que é possível cadastrar um produto com sucesso]**
-
-  - O resultado retornado para cadastrar o produto com sucesso deverá ser conforme exibido abaixo, com um _status http_ `201`:
-
-  ```json
-  {
-    "id": 6,
-    "name": "Martelo de Thor",
-    "price": "30 peças de ouro"
-  }
-  ```
-
-- **[Será validado que os testes estão cobrindo pelo menos 30% das camadas `Service` e `Controller`.]**
-
-</details>
 
 ---
 
