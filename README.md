@@ -83,7 +83,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 ## 3 - Created an endpoint to list all requests and tests that cover the functionalities of this endpoint
 
-- The endpoint is accessible from the path  (`/orders`).
+- The endpoint is accessible from the path (`/orders`).
 - The result returned to successfully register the product should be as shown below, with a _status http_ `200`:
 
 
@@ -104,15 +104,15 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 ---
 
-## 4 - Crie um endpoint para o login de pessoas usuárias e testes que cubram as funcionalidades deste endpoint
+## 4 - Created an endpoint for the login of users and tests that cover the functionalities of this endpoint
 
-- O endpoint deve ser acessível no caminho (`/login`).
+- The endpoint is accessible from the path  (`/login`).
 
-- A rota deve receber os campos `username` e `password`, e esses campos devem ser validados no banco de dados.
+- The route receives the `username` and `password` fields, and these fields are validated against the database.
 
-- Um token `JWT` deve ser gerado e retornado caso haja sucesso no _login_. No seu _payload_ deve estar presente o _id_ e _username_.
+- A `JWT` token is generated and returned if _login_ succeeds. Your _payload_ must contain _id_ and _username_.
 
-- O endpoint deve receber a seguinte estrutura:
+-  The endpoint receives the following structure:
 
 ```json
 {
@@ -121,59 +121,40 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 }
 ```
 
-- Os testes devem garantir no mínimo 70% de cobertura do código das camadas `Service` e `Controller`.
-
 <details close>
- <summary>Além disso, as seguintes verificações serão feitas:</summary>
+ <summary>Validations:</summary>
 
-> 👉 Para caso haja problemas no login
-
-- **[Será validado que o campo "username" é enviado]**
-
-  - Se o _login_ não tiver o campo "username", o resultado retornado deverá ser um _status http_ `400` e
+> 👉  If the _login_ does not have the "username" field, the result returned should be an http_status_ `400`: 
 
   ```json
   { "message": "\"username\" and \"password\" are required" }
   ```
 
-- **[Será validado que o campo "password" é enviado]**
-
-  - Se o _login_ não tiver o campo "password", o resultado retornado deverá ser um _status http_ `400` e
+  - If the _login_ does not have the "password" field, the result returned should be a _status http_ `400`:
 
   ```json
   { "message": "\"username\" and \"password\" are required" }
   ```
 
-- **[Será validado que não é possível fazer login com um username inválido]**
-
-  - Se o _login_ tiver um username que não exista no banco de dados ele será considerado inválido e o resultado retornado deverá ser um _status http_ `401` e
+  -If the _login_ has a username that does not exist in the database it will be considered invalid and the result returned should be a _status http_ `401`:
 
   ```json
   { "message": "Username or password invalid" }
   ```
 
-- **[Será validado que não é possível fazer login com uma senha inválida]**
-
-  - Se o login tiver uma senha que não corresponda à senha salva no banco de dados, ela será considerada inválida e o resultado retornado deverá ser um _status http_ `401` e
+  - If the login has a password that does not match the password saved in the database, it is considered invalid and the result returned should be a _status http_ `401`:
 
   ```json
   { "message": "Username or password invalid" }
   ```
 
-  **De olho na dica 👀:** As senhas salvas no banco de dados estão encriptadas com o **bcrypt**, portanto, você deve levar isso em consideração no momento de compará-las com as enviadas na requisição e utilizar o método adequado.
-
-> 👉 Para caso os dados sejam enviados corretamente
-
-- **[Será validado que é possível fazer login com sucesso]**
-
-  - Se o login foi feito com sucesso, o resultado deverá ser um _status http_ `200` e deverá retornar um _token_ no formato abaixo (a _token_ não precisa ser exatamente igual a essa):
+  - If the login was successful, the result should be a _status http_ `200` and should return a _token_ in the format below (the _token_ does not need to be exactly like this):
 
   ```json
   {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJIYWdhciIsImlhdCI6MTY4Njc1NDc1Nn0.jqAuJkcLp0RuvrOd4xKxtj_lm3Z3-73gQQ9IVmwE5gA"
   }
 
-- **[Será validado que os testes estão cobrindo pelo menos 70% das camadas `Service` e `Controller`.]**
 
 </details>
 
