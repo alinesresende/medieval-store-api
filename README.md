@@ -81,26 +81,11 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 ---
 
-## 3 - Crie um endpoint para listar todos os pedidos e testes que cubram as funcionalidades deste endpoint
+## 3 - Created an endpoint to list all requests and tests that cover the functionalities of this endpoint
 
-- O endpoint deve ser acessível no caminho (`/orders`).
-- Essa rota deve retornar todos os pedidos e os `id`s dos produtos associados a estes.
-- Os testes devem garantir no mínimo 60% de cobertura do código das camadas `Service` e `Controller`.
+- The endpoint is accessible from the path  (`/orders`).
+- The result returned to successfully register the product should be as shown below, with a _status http_ `200`:
 
-**De olho na dica 👀:** Todos os produtos são itens artesanais, portanto, únicos. Por isso são os produtos que contêm os `id`s dos pedidos.
-
-**De olho na dica 👀:** Você precisará combinar a lógica de dois models aqui 😉
-
-<details close>
-  <summary>Além disso, as seguintes verificações serão feitas:</summary>
-
-  <br>
-
-> 👉 Para orders
-
-- **[Será validado que é possível listar todos os pedidos com sucesso]**
-
-  - Quando houver mais de um pedido, o resultado retornado para listar pedidos com sucesso deverá ser conforme exibido abaixo, com um _status http_ `200`:
 
   ```json
   [
@@ -116,10 +101,6 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
     }
   ]
   ```
-
-- **[Será validado que os testes estão cobrindo pelo menos 60% das camadas `Service` e `Controller`.]**
-
-</details>
 
 ---
 
