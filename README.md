@@ -57,19 +57,10 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 ---
 
-## 2 - Crie um endpoint para a listagem de produtos e testes que cubram as funcionalidades deste endpoint
+## 2 - Created an endpoint for listing products and tests that cover the functionalities of this endpoint
 
-- O endpoint deve ser acessível no caminho (`/products`);
-- Os testes devem garantir no mínimo 50% de cobertura do código das camadas `Service` e `Controller`.
-
-<details close>
-  <summary>Além disso, as seguintes verificações serão feitas:</summary>
-
-> 👉 Para caso os dados sejam enviados corretamente
-
-- **[Será validado que é possível listar todos os produtos com sucesso]**
-
-  - O resultado retornado para listar produtos com sucesso deverá ser conforme exibido abaixo, com um _status http_ `200`:
+- The endpoint is accessible from the path (`/products`);
+- The result returned to successfully register the product should be as shown below, with a _status http_ `200`:
 
   ```json
   [
@@ -87,10 +78,6 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
     }
   ]
   ```
-
-- **[Será validado que os testes estão cobrindo pelo menos 50% das camadas `Service` e `Controller`.]**
-
-</details>
 
 ---
 
