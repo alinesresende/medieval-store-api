@@ -34,6 +34,9 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 </details>
 
 
+# :game_die: Challenges
+
+
 ## 1 - Created an endpoint for the registration of products and tests that cover the functionalities of this endpoint
 
 - The endpoint is accessible from the path (`/products`);
