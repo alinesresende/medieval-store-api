@@ -1,7 +1,7 @@
 # Medieval Store API 🚀
 
 <details>
-  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary>
+  <summary><strong>👨‍💻 Challenge </strong></summary>
 
 Created a store of medieval items, such as those swords made to order for a specific person, in the format of an _API_, using _Typescript_ and _Sequelize_.
 
@@ -9,46 +9,25 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 ---
 
-⚠️ **Dicas Importantes** ⚠️:
-
-- Não haverá Front-end neste projeto. Não se preocupe com a visualização das coisas, apenas com as funcionalidades e qualidade do seu código;
-
-- Sua API deve ser desenvolvida dentro da pasta `./src`.
-- Seus testes deverão ser desenvolvidos na raiz da aplicação, em um diretório chamado `tests`.
-
 </details>
 
-<details>
-  <summary><strong>🗓 Data de Entrega</strong></summary>
-
-- Este projeto é individual.
-- Serão `2` dias de projeto.
-- Data de entrega para avaliação regular do projeto: `07/07/2023 14:00`.
-
-</details>
-
-# Orientações específicas deste projeto
 
 <details>
-  <summary><strong>🐳 Especificações sobre uso do Docker</strong></summary>
+  <summary><strong>🐳 Docker</strong></summary>
 
-> Rode os serviços `app-trybesmith` e `db` com o comando `docker-compose up -d --build`.
+> Run the `app-trybesmith` and `db` services with the command `docker-compose up -d --build`.
 
-- Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queria fazer uso da aplicação em containers
-- Esses serviços irão inicializar um container chamado `trybesmith_api` e outro chamado `trybesmith_db`.
-- A partir daqui você pode rodar o container `trybesmith_api` via CLI ou abri-lo no VS Code.
+- These services will start up a container named `trybesmith_api` and another named `trybesmith_db`.
 
-  > Rode o comando `npm run db:reset` (este comando vai funcionar somente após a criação do tipos solicitados no requisito) para criar o banco de dados, as tabelas que serão utilizadas e populá-las.
+  > Run the `npm run db:reset` command (this command will work only after creating the requested types in the requirement) to create the database, the tables that will be used and populate them.
 
-  > Use o comando `docker exec -it trybesmith_api bash` para entrar no container.
+  > Use the command `docker exec -it trybesmith_api bash` to enter the container.
+  > 
+- To view the nodemon logs in your terminal use the following commands:
 
-  - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
+  > `docker ps`: to view the active containers and get the `CONTAINER ID`;
 
-- Para visualizar o logs do nodemon em seu terminal use os seguintes comandos:
-
-  > `docker ps`: para visualizar os containers ativos e pegar o `CONTAINER ID`;
-
-  > `docker logs -f <id_do_container>`: para visualizar os logs do seu servidor com nodemon;
+  > `docker logs -f <container_id>`: to view your server logs with nodemon;
 
 </details>
 
