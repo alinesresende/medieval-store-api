@@ -1,30 +1,11 @@
-# Boas vindas ao repositório do projeto Trybesmith
-
-Para realizar o projeto, atente-se a cada passo descrito a seguir, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Entregáveis
-
-<details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary>
-
-Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/fc998c60-386e-46bc-83ca-4269beb17e17/section/fe827a71-3222-4b4d-a66f-ed98e09961af/day/35e03d5e-6341-4a8c-84d1-b4308b2887ef/lesson/573db55d-f451-455d-bdb5-66545668f436) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-
-</details>
+# Medieval Store API 🚀
 
 <details>
   <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary>
 
-Para este projeto, você vai criar uma loja de itens medievais, como aquelas espadas feitas sob encomenda para uma pessoa específica, no formato de uma _API_, utilizando _Typescript_ e _Sequelize_.
+Created a store of medieval items, such as those swords made to order for a specific person, in the format of an _API_, using _Typescript_ and _Sequelize_.
 
-Você irá desenvolver as camadas de _Service_ e _Controllers_ da aplicação em seu código, utilizando _JWT_ para autenticar algumas rotas, além de testes para garantir o correto funcionamento delas. A aplicação terá _endpoints_ que darão suporte a operações de criação, leitura e atualização de informações.
+Developed the application's _Service_ and _Controllers_ layers in its code, using _JWT_ to authenticate some routes, in addition to tests to ensure their correct operation. The application will have _endpoints_ that will support operations for creating, reading and updating information.
 
 ---
 
