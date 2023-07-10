@@ -28,7 +28,6 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 <details>
   <summary><strong>🎲 Challenge Diagram </strong></summary>
-  O banco de dados do projeto segue a estrutura abaixo:
 
   <img src="images/diagram-der.png" height="200px" />
 
@@ -115,7 +114,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 ```
 
 <details>
- <summary>Validations:</summary>
+ <summary> :test_tube: Middlewares:</summary>
 
 > 👉  If the _login_ does not have the "username" field, the result returned should be an http_status_ `400`: 
 
@@ -159,7 +158,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 
 <details close>
 
-  <summary>As seguintes validações deverão ser realizadas:</summary>
+  <summary> :test_tube: Middlewares: </summary>
 
   <br>
 
