@@ -8,6 +8,10 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 <details>
   <summary><strong>🐳 Docker</strong></summary>
 
+  - `git clone git@github.com:alinesresende/blogs-api.git`
+
+  - `npm install`
+
 > Run the `app-trybesmith` and `db` services with the command `docker-compose up -d --build`.
 
 - These services will start up a container named `trybesmith_api` and another named `trybesmith_db`.
