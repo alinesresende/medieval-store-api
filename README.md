@@ -8,7 +8,7 @@ Developed the application's _Service_ and _Controllers_ layers in its code, usin
 <details>
   <summary><strong>🐳 Docker</strong></summary>
 
-  - `git clone git@github.com:alinesresende/blogs-api.git`
+  - `git clone git@github.com:alinesresende/medieval-store-api.git`
 
   - `npm install`
 
